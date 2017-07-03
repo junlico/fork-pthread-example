@@ -1,6 +1,4 @@
 # fork-pthread-example
-In this project, your job is to understand how to create processes and threads and use multiple processes and threads to process multiple data in parallel.
-
 1. ./data/: This directory includes csv files for input data
 2. ./output/: This directory is for output data
 3. main.cpp: This is a top file for this project
@@ -10,15 +8,13 @@ In this project, your job is to understand how to create processes and threads a
 7. p1_threads.cpp: This is a file to handle threads
 8. Makefile: This is a compilation script
 
-In this project, you have to use 2 input arguments: the number of processes and the number of threads.
-You have to print error message and usage example if you didn’t provide those arguments. This is an
-example for the error message.
+Use 2 input arguments: the number of processes and the number of threads.
+Print error message and usage example if you didn’t provide those arguments. This is an example for the error message.
 ```
 [ERROR] Expecting 2 argument, but got (X).
 [USAGE] a1_exec <number of processes> <number of threads>
 ```
-Besides, 2 arguments for the executable, some additional descriptions for your program are as follows:
-
+Besides, 2 arguments for the executable, some additional descriptions for program are as follows:
 * For each input file, you need to generate: Average, Median, Standard Deviation, Top 3 students,
 Middle 3 students, and Lowest 3 students. Calculate the result rounded up to the three digits after
 the decimal point.
@@ -34,7 +30,6 @@ filename>-stats.csv (i.e. os-stats.csv).
 * When a process is created, and terminated, you have to print the message with process id to indicate
 the process is created/terminated (you don’t need to do this for threads).
 * Main process must complete its behavior after its child processes
-
 
 Example command line output is as follows:
 ```
