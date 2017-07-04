@@ -33,7 +33,7 @@ the process is created/terminated (you don’t need to do this for threads).
 
 Example command line output is as follows:
 ```
-./p1_exec 2 4
+./p1_exec 2 3
 Main process is created. (pid: 8456)
 Child process has been created. (pid: 3992)
 Child process is created. (pid: 4692)
