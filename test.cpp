@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>			//atoi()
+#include <unistd.h>			//fork()
 #include <iostream>
 #include <vector>
 
-//int[] splitIntoParts(int whole, int parts);
 int main(int argc, char** argv) {
     
     std::string class_name[] = {"os", "architecture", "java", "algorithm", "digital-design"};
@@ -18,11 +18,16 @@ int main(int argc, char** argv) {
    	//printf("%d\n", remainder);
    	int cnt = 0;
    	int size = 0;
+   	pid_t pid = 0;
+   	
+   	
+   	
    	std::vector<std::string> filename;
    	for (int i = 0; i < num_process; i++) {
    		size = (remainder > 0) ? (base_size + 1) : base_size;
-   		remainder--;
-   		//printf("%d : %d\n", i, size);
+   		remainder -= (remainder > 0) ? 1 : 0;
+   		printf("%d : %d\n", i, size);
+   		
    		for (int j = 0; j < size; j++) {
    			filename.push_back(class_name[cnt]);
    			cnt++;
@@ -32,7 +37,12 @@ int main(int argc, char** argv) {
    			std::cout << i << ": " << filename[k] << std::endl;
    		}
    		*/
+   		
+   		pid = fork();
+   		
+   		
    		filename.clear();
+   		
    	}
    
    

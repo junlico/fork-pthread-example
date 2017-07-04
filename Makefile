@@ -1,17 +1,12 @@
 EXEC=test
-CC=gcc
-
 CC=g++
 CFLAGS=-g -I.
-
 
 %.o: %.cpp
 	$(CC) -c $< $(CFLAGS)
 
-${EXEC}: test.o
-	g++ -o ${EXEC} test.o -I. -lpthread 
-
-
+${EXEC}: main.o p1_process.o p1_thread.o
+	g++ -o ${EXEC} main.o p1_process.o p1_thread.o -I. -lpthread 
 
 clean:
 	rm -rf ./${EXEC}
