@@ -4,8 +4,9 @@
 3. main.cpp: This is a top file for this project
 4. p1_process.h: This is a header file to handle processes
 5. p1_process.cpp: This is a file to handle processes
-6. p1_threads.h: This is a header file to handle threads
-7. p1_threads.cpp: This is a file to handle threads
+6. p1_thread.h: This is a header file to handle threads
+7. p1_thread.cpp: This is a file to handle threads
+8. p1_type.h: This is a header file to handle data struct
 8. Makefile: This is a compilation script
 
 Use 1 input argument: the number of processes.
@@ -33,11 +34,11 @@ Example command line output is as follows:
 ```
 ./p1_exec 2
 Main process is created. (pid: 8456)
-Child process has been created. (pid: 3992)
-Child process is created. (pid: 4692)
+Child process is created. (pid: 8457)
+Child process is created. (pid: 8458)
 ...
-Child process is terminated. (pid: 3992)
-Child process is terminated. (pid: 4692)
+Child process is terminated. (pid: 8457)
+Child process is terminated. (pid: 8458)
 Main process is created. (pid: 8456)
 ```
 
