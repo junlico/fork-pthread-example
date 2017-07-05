@@ -8,7 +8,7 @@ struct Student {
 	float grade;
 };
 
-struct StudentData {
+struct ClassData {
 	std::string class_code;
 	float median;
 	float avg;

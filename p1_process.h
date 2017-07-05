@@ -11,7 +11,10 @@
 #include <sys/wait.h>		//wait()
 #include <sys/types.h>
 #include <pthread.h>
+#include <algorithm>		//std::sort
+#include <iomanip>			//std::setprecision
 void get_statistics(std::string class_name[], int num_class, int num_process);
 
-struct StudentData read_file(std::string filename);
+struct ClassData read_file(std::string filename);
+void write_file(std::string filename, struct ClassData data);
 #endif
