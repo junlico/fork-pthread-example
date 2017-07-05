@@ -1,13 +1,15 @@
 # fork-pthread-example
 1. ./input/: This directory includes csv files for input data
 2. ./output/: This directory is for output data
-3. main.cpp: This is a top file for this project
-4. p1_process.h: This is a header file to handle processes
-5. p1_process.cpp: This is a file to handle processes
-6. p1_thread.h: This is a header file to handle threads
-7. p1_thread.cpp: This is a file to handle threads
-8. p1_type.h: This is a header file to handle data struct
-8. Makefile: This is a compilation script
+3. Makefile: This is a compilation script
+4. README.md: ReadMe 
+5. main.cpp: This is a top file for this project
+6. p1_process.cpp: This is a file to handle processes
+7. p1_process.h: This is a header file to handle processes
+8. p1_thread.cpp: This is a file to handle threads
+9. p1_thread.h: This is a header file to handle threads
+10. p1_type.h: This is a header file to handle data struct
+
 
 Use 1 input argument: the number of processes.
 Print error message and usage example if you didn’t provide those arguments. This is an example for the error message.
