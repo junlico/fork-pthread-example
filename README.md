@@ -22,7 +22,7 @@ the decimal point.
 * Each input file has the following data: 1 line for class code (6 digits) and the rest of the lines for student id (10 digits) and grade.
 * Program needs to create multiple processes to handle multiple files in parallel. Each child
 process handles at least one file. In other words, one child process may handle multiple files.
-* Only child process should create 3 threads to perform the calculation. So, process hierarchy
+* Only child process should create multiple threads to perform the calculation. So, process hierarchy
 will be the following: Main process -> Child processes -> Threads
 * You must not waste any resource, thus you should not create any non-working process or thread.
 * The result needs to be saved to output directory with the following filename: <input
